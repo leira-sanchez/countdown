@@ -1,0 +1,52 @@
+#la-caja {
+    justify-content: center;
+    text-align: center;
+    font-size: 1.5em;
+    font-style: bold;
+    color: black;
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%); */
+    margin: 0;
+    text-shadow: -1px 0 white, 0 1px black, 1px 0 black, 0 -1px white;
+
+}
+#widget-div {
+    /* border: 5px solid red; */
+    border-radius: 50%;
+    height: 50vw;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+
+    background: url(https://images-na.ssl-images-amazon.com/images/I/61r6oSaNS4L._SX355_.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+    z-index: 1;
+    opacity: 0.65;
+ 
+}
+/* #countdown-div {
+    z-index: 1;
+    position: absolute;
+} */
+
+#countdown {
+    z-index: -1;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: absolute;
+    /* left: 25%; */
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
