@@ -12,47 +12,26 @@
 </head>
 
 <body>
-    <div id="la-caja">
-        <div id="header" >
-            <h1>Vamos pa' España en...</h1>
+    <div id="header">
+        <h1>Paticalientes</h1>
+        <!-- <nav >
+            <li>Puerto Rico</li>
+            <li>España</li>
+            <li>Francia</li>
+        </nav> -->
+    </div>
+    <div onclick="puertorico()" id="widget-puertorico">
+            <p class="countdown" id="countdown-puertorico"></p>
         </div>
-        <div id="widget-div">
-            <div id="countdown-div">
-                <p id="countdown"></p>
-            </div>
-        </div>
+    <div onclick="espana()" id="widget-espana">
+        <p class="countdown" id="countdown-espana"></p>
+    </div>
+    <div onclick="francia()" id="widget-francia">
+        <p class="countdown" id="countdown-francia"></p>
     </div>
 
-    <script>
-        // Set the date we're counting down to
-        var countDownDate = new Date("Feb 14, 2020");
-        // var countDownDate = new Date("Dec 3, 2019 17:58:00").getTime();
+    <script src="script.js">
 
-        // Update the count down every 1 second
-        var x = setInterval(function () {
-
-            // Get today's date and time
-            var now = new Date().getTime();
-
-            // Find the distance between now and the count down date
-            var distance = countDownDate - now;
-
-            // Time calculations for days, hours, minutes and seconds
-            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-            // Display the result in the element with id="demo"
-            document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
-                + minutes + "m " + seconds + "s ";
-
-            // If the count down is finished, write some text
-            if (distance < 0) {
-                clearInterval(x);
-                document.getElementById("demo").innerHTML = "¡Patas y amigas, vamos pa' España!";
-            }
-        }, 1000);
     </script>
 
 
