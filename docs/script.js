@@ -1,6 +1,5 @@
 // COUNTDOWN
-// Get today's date and time
-var now = new Date().getTime();
+
 var days; var hours; var minutes; var seconds;
 // Set the date we're counting down to
 var countDownDate;
@@ -49,21 +48,10 @@ var countdownFrancia = setInterval(function () {
     }
 }, 1000);
 
-var countdownPuertoRico = setInterval(function () {
-    countDownDate = new Date("Dec 16, 2019");
-    distance();
-    // Display the result in the element with id="demo"
-    document.getElementById("countdown-puertorico").innerHTML = days + "d " + hours + "h "
-        + minutes + "m " + seconds + "s ";
-
-    // If the count down is finished, write some text
-    if (distance < 0) {
-        clearInterval(countdownPuertoRico);
-        document.getElementById("countdown-espana").innerHTML = "¡Patas y amigas, vamos pa' España!";
-    }
-}, 1000);
 
 var distance = () => {
+    // Get today's date and time
+    var now = new Date().getTime();
     // Find the distance between now and the count down date
     var distance = countDownDate - now;
 
@@ -72,7 +60,9 @@ var distance = () => {
     hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     seconds = Math.floor((distance % (1000 * 60)) / 1000);
-}
+};
+
+
 //BUTTONS
 
 var puertoRico = () => {
