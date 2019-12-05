@@ -26,7 +26,7 @@ nav li {
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 20%;
+    top: 25%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
@@ -46,7 +46,7 @@ nav li {
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 50%;
+    top: 55%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
@@ -66,7 +66,7 @@ nav li {
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 80%;
+    top: 85%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
@@ -90,3 +90,39 @@ nav li {
     transform: translate(-50%, -50%);
     text-shadow: -1px 0 white, 0 1px black, 1px 0 black, 0 -1px white;
 }
+
+
+/* ESPAÑA */
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .collapsible:hover {
+    background-color: #ccc;
+  }
+  
+  /* Style the collapsible content. Note: hidden by default */
+  .content {
+    padding: 0px;
+    display: none;
+    overflow: hidden;
+    background-color: white;
+  }
+  li, li button {
+      list-style: none;
+      background-color: white;
+      padding: 18px;
+      width:100%;
+      text-align: center;
+  }

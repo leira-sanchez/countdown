@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Countdown</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="countdown.css" />
+
+</head>
+
+<body>
+    <div id="header">
+        <h1>Paticalientes por España</h1>
+        <button onclick="collapsible(event)" type="button" class="">Flight Status</button>
+        <div id="flight-status" class="content">
+            <ul>
+                <li><button type="button" onclick="collapsible(event)">Ana</button></li>
+                <div class="person-flight content">
+                    <p class="">VUELOS</p>
+                </div>
+                <li>Camila</li>
+                <li>Francine</li>
+                <li>Leira</li>
+                <li>Teresita</li>
+            </ul>
+        </div>
+
+        <button onclick="console.log('clicked 2');" type="button" class="collapsible">Itinerary</button>
+        <div id="itinerary" class="content">
+            <p> esta es la que hay</p>
+        </div>
+    </div>
+    <script src="espana.js"></script>
+</body>
+
+</html>
