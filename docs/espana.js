@@ -20,9 +20,10 @@
 
 function collapsible(e) {
     console.log('en collapsible');
-    contenido = e.target.nextElementSibling;
-    console.log('contenido: ', e.target);
-    contenido.classList.toggle("active");
+    e.target.classList.toggle("active");
+    var contenido = e.target.nextElementSibling;
+    console.log('contenido: ', e.target.nextElementSibling);
+    // contenido.classList.toggle("active");
     if (contenido.style.display === "block") {
         console.log('in the if');
         contenido.style.display = "none";
